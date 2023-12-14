@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6628153F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C19Console", "Tests\C19Console\C19Console.csproj", "{7332D63A-3944-46D7-B8BB-8E3A69D4E37B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CV19WPFTest", "Tests\CV19WPFTest\CV19WPFTest.csproj", "{D7C5CEBE-FA58-4A8C-A5F1-716D04672E46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{7332D63A-3944-46D7-B8BB-8E3A69D4E37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7332D63A-3944-46D7-B8BB-8E3A69D4E37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7332D63A-3944-46D7-B8BB-8E3A69D4E37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C5CEBE-FA58-4A8C-A5F1-716D04672E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C5CEBE-FA58-4A8C-A5F1-716D04672E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C5CEBE-FA58-4A8C-A5F1-716D04672E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C5CEBE-FA58-4A8C-A5F1-716D04672E46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7332D63A-3944-46D7-B8BB-8E3A69D4E37B} = {6628153F-9F44-49DD-B33B-5ADD07393E0D}
+		{D7C5CEBE-FA58-4A8C-A5F1-716D04672E46} = {6628153F-9F44-49DD-B33B-5ADD07393E0D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61741201-1C72-4E8F-A03E-81255FA40ADD}
