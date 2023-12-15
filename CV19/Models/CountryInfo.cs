@@ -1,4 +1,4 @@
-﻿using CV19.Data;
+﻿using CV19.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
