@@ -12,14 +12,14 @@ namespace CV19.ViewModels.Base
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        protected virtual bool Set<T>(ref T field, T  value, [CallerMemberName] string propertyName = null)
+        protected virtual bool Set<T>(ref T field, T value, [CallerMemberName] string PropertyName = null)
         {
-            if(Equals(field, value)) return false;
+            if (Equals(field, value)) return false;
             field = value;
-            OnPropertyChanged(propertyName);
+            OnPropertyChanged(PropertyName);
             return true;
         }
 
