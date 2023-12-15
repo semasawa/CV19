@@ -1,5 +1,5 @@
-﻿using CV19.Data;
-using CV19.Infrastructure.Commands;
+﻿using CV19.Infrastructure.Commands;
+using CV19.Data;
 using CV19.ViewModels.Base;
 using System;
 using System.Collections.Generic;
@@ -70,23 +70,23 @@ namespace CV19.ViewModels
 
                 data_points.Add(new DataPoint { XValue = x, YValue = y });
             }
-            TestDataPoints = data_points;
+            //TestDataPoints = data_points;
 
         }
-        #region TestDataPoints : IEnumerable<DataPoint> - Тестовый набор данных для визуализации графиков
+        //#region TestDataPoints : IEnumerable<DataPoint> - Тестовый набор данных для визуализации графиков
 
-        /// <summary>Тестовый набор данных для визуализации графиков</summary>
+        ///// <summary>Тестовый набор данных для визуализации графиков</summary>
         
-        private IEnumerable<DataPoint> _TestDataPoints;
+        //private IEnumerable<DataPoint> _TestDataPoints;
 
-        /// <summary>Тестовый набор данных для визуализации графиков</summary>
+        ///// <summary>Тестовый набор данных для визуализации графиков</summary>
 
-        public IEnumerable<DataPoint> TestDataPoints 
-        { 
-            get => _TestDataPoints; 
-            set => Set(ref _TestDataPoints, value); 
-        }
-        #endregion
+        //public IEnumerable<DataPoint> TestDataPoints 
+        //{ 
+        //    get => _TestDataPoints; 
+        //    set => Set(ref _TestDataPoints, value); 
+        //}
+        //#endregion
 
     }
 }
