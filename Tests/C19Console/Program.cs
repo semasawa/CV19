@@ -50,7 +50,9 @@ namespace C19Console
             {
                 var province = row[0].Trim();
                 var country_name = row[1].Trim(' ', '"');
-                var counts = row.Skip(4).Select(int.Parse).ToArray();
+                var counts = row.Skip(4)
+                    .Select(int.Parse)
+                    .ToArray();
 
                 yield return (country_name, province, counts);
             }
@@ -73,7 +75,7 @@ namespace C19Console
             var russia_data = GetData()
                 .First(v => v.Country.Equals("Russia", StringComparison.OrdinalIgnoreCase));
 
-            Console.WriteLine(string.Join("\r\n", GetDates().Zip(russia_data.Counts, (date, count) => $"{date:dd:MM} - {count}")));
+            Console.WriteLine(string.Join("\r\n", GetDates().Zip(russia_data.Counts, (date, count) => $"{date} - {count}")));
 
             Console.ReadLine();
         }
